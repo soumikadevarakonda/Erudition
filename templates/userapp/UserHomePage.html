@@ -9,59 +9,58 @@
 {% endblock %}
 
 {% block body %}
-<header>
-    <center>
-        <h1>Book Vault</h1>
-        <p class="tagline">
-            <em>Your gateway to endless reading!</em>
-        </p>
-    </center>
+<header class="header-section text-center py-5 bg-primary text-white">
+    <div class="container">
+        <!-- Title and tagline centered -->
+        <div class="header-content">
+            <h1 class="display-4 mb-3">Book Vault</h1>
+            <p class="lead mb-4"><em>Your gateway to endless reading!</em></p>
+        </div>
+    </div>
 </header>
 
-<!-- Search Bar -->
-<div class="search-bar text-center my-4">
-    <input type="text" placeholder="Search for books..." class="form-control w-50 d-inline">
-    <button class="btn btn-primary">Search</button>
+<!-- Book List -->
+<div class="book-list d-flex justify-content-center flex-wrap">
+    {% for book in books %}
+        <div class="book-item m-3 p-3 border rounded" style="width: 22%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+            <div class="book-details">
+                <!-- Display Image (Optional) -->
+                {% if book.image %}
+                    <img src="{{ book.image.url }}" alt="{{ book.title }}" class="img-fluid mb-2">
+                {% else %}
+                    <img src="{% static 'images/default-book-cover.jpg' %}" alt="Default Cover" class="img-fluid mb-2">
+                {% endif %}
+                
+                <!-- Book Information -->
+                <h5 class="book-title">{{ book.title }}</h5>
+                <p class="book-author text-muted"><strong>Author:</strong> {{ book.author }}</p>
+                <p class="book-description">
+                    {{ book.description|truncatechars:100 }}
+                    {% if book.description|length > 100 %}
+                        <a href="#" class="text-primary">...more</a>
+                    {% endif %}
+                </p>
+                
+                <!-- Read Button -->
+                {% if book.pdf %}
+                    <a href="{{ book.pdf.url }}" target="_blank" class="btn btn-sm btn-success w-100">Read</a>
+                {% else %}
+                    <button class="btn btn-sm btn-secondary w-100" disabled>Not Available</button>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
 </div>
 
-<!-- Suggestions Title -->
-<div class="suggestions-title text-center">
-    <h2>Suggestions</h2>
-</div>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"440515b868d4cf93a4f868749ba526ee","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+</script>
 
-<!-- Book Suggestions Section -->
-<div class="suggestions d-flex justify-content-center flex-wrap">
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/autonomous.jpg' %}" alt="Autonomous" class="img-fluid">
-    </div>
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/iot.jpg' %}" alt="IoT" class="img-fluid">
-    </div>
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/java.jpg' %}" alt="Java" class="img-fluid">
-    </div>
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/maths.jpg' %}" alt="Mathematics" class="img-fluid">
-    </div>
-</div>
-
-<div class="suggestions-title text-center">
-    <h2>More Suggestions</h2>
-</div>
-
-<!-- Additional Book Suggestions Section -->
-<div class="suggestions d-flex justify-content-center flex-wrap">
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/ml.jpg' %}" alt="Machine Learning" class="img-fluid">
-    </div>
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/oxford.jpg' %}" alt="Oxford" class="img-fluid">
-    </div>
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/the four.jpg' %}" alt="The Four" class="img-fluid">
-    </div>
-    <div class="book-item m-2" style="width: 22%;">
-        <img src="{% static 'images/atomic habits.jpg' %}" alt="Atomic Habits" class="img-fluid">
-    </div>
-</div>
 {% endblock %}

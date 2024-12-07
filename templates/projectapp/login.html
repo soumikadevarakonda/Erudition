@@ -1,28 +1,98 @@
 {% extends 'navbar/ProjectNavbar.html' %}
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Login</title>
-    <link rel="stylesheet" href="../../static/css/styles.css">
-</head>
-<body>
+{% block title %}User Login{% endblock %}
 
 {% block body %}
-    <h2>Login</h2>
-    <form method="POST" action="{% url 'loginpagelogic' %}">
+<style>
+    /* Centered container for the login form */
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Title styling for the login page */
+    .page-title {
+        text-align: center;
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Styling for form fields */
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    /* Styling for submit button */
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2rem;
+        background-color: #2c3e50; /* Steel Blue color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #36648B; /* Slightly darker shade of Steel Blue */
+    }
+
+    /* Link styling for the register option */
+    .register-link {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+    .register-link a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+
+    /* Mobile responsiveness for smaller screens */
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<div class="container">
+    <h2 class="page-title">Login</h2>
+    <form method="POST" action="{% url 'loginpagelogic' %}" class="login-form">
         {% csrf_token %}
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        <button type="submit">Login</button>
+        <button type="submit" class="submit-btn">Login</button>
     </form>
-    <p>Don't have an account? <a href="{% url 'registerpagecall' %}">Register here</a>.</p>
-{% endblock %}
 
-</body>
-</html>
+    <div class="register-link">
+        <p>Don't have an account? <a href="{% url 'registerpagecall' %}">Register here</a>.</p>
+    </div>
+</div>
+{% endblock %}
