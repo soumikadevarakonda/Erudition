@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb15480d-04c6-4373-b547-e451129c21e2" name="Changes" comment="Book List in User App">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar/UserNavbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar/UserNavbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/userapp/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userapp/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <workItem from="1733580388257" duration="1141000" />
       <workItem from="1733586775764" duration="4277000" />
       <workItem from="1733591375098" duration="2517000" />
-      <workItem from="1733593935575" duration="7450000" />
+      <workItem from="1733593935575" duration="7777000" />
     </task>
     <task id="LOCAL-00001" summary="Book List">
       <option name="closed" value="true" />
