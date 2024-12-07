@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb15480d-04c6-4373-b547-e451129c21e2" name="Changes" comment="" />
+    <list default="true" id="cb15480d-04c6-4373-b547-e451129c21e2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projectapp/Digital.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projectapp/Digital.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projectapp/ProjectHomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projectapp/ProjectHomePage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Django Server.Erudition-main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Rebasing main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/soumi/Downloads/Erudition-main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.Erudition-main.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/soumi/Downloads/Erudition-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Erudition-main" type="Python.DjangoServer" factoryName="Django server">
       <module name="Erudition-main" />
@@ -94,7 +99,7 @@
       <workItem from="1733580388257" duration="1141000" />
       <workItem from="1733586775764" duration="4277000" />
       <workItem from="1733591375098" duration="2517000" />
-      <workItem from="1733593935575" duration="830000" />
+      <workItem from="1733593935575" duration="5251000" />
     </task>
     <servers />
   </component>
