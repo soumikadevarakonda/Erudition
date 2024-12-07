@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb15480d-04c6-4373-b547-e451129c21e2" name="Changes" comment="Book List in User App">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/userapp/UserHomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/userapp/UserHomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/userapp/UserHomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userapp/UserHomePage.html" afterDir="false" />
-    </list>
+    <list default="true" id="cb15480d-04c6-4373-b547-e451129c21e2" name="Changes" comment="Book List in User App" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +107,7 @@
       <workItem from="1733580388257" duration="1141000" />
       <workItem from="1733586775764" duration="4277000" />
       <workItem from="1733591375098" duration="2517000" />
-      <workItem from="1733593935575" duration="12718000" />
+      <workItem from="1733593935575" duration="12862000" />
     </task>
     <task id="LOCAL-00001" summary="Book List">
       <option name="closed" value="true" />
