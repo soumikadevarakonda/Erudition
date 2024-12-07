@@ -19,5 +19,5 @@ def userhomepage(request):
 
 def book_list(request):
     books = Book.objects.all()  # Retrieve all books from the database
-    return render(request, 'book_list.html', {'books': books})
+    return render(request, 'userapp/book_list.html', {'books': books})
 

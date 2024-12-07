@@ -9,15 +9,6 @@
 {% endblock %}
 
 {% block body %}
-<!-- Header Section -->
-<header class="header-section text-center py-5 bg-primary text-white">
-    <div class="container">
-        <div class="header-content">
-            <h1 class="display-4 mb-3">Book Vault</h1>
-            <p class="lead mb-4"><em>Your gateway to endless reading!</em></p>
-        </div>
-    </div>
-</header>
 
 <!-- Book List Section -->
 <div class="container my-4">
@@ -42,9 +33,6 @@
                         <!-- Description (Truncated) -->
                         <p class="card-text">
                             {{ book.description|truncatechars:100 }}
-                            {% if book.description|length > 100 %}
-                                <a href="#" class="text-primary">...more</a>
-                            {% endif %}
                         </p>
 
                         <!-- Read Button -->
@@ -59,16 +47,5 @@
         {% endfor %}
     </div>
 </div>
-
-<script type="text/javascript">
-    (function(d, m){
-        var kommunicateSettings = 
-            {"appId":"440515b868d4cf93a4f868749ba526ee","popupWidget":true,"automaticChatOpenOnNavigation":true};
-        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-        window.kommunicate = m; m._globals = kommunicateSettings;
-    })(document, window.kommunicate || {});
-</script>
 
 {% endblock %}
