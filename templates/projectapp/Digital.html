@@ -1,0 +1,103 @@
+{% extends 'navbar/ProjectNavbar.html' %}
+{% load static %}
+
+{% block title %}About Us - E-Library Management System{% endblock %}
+
+{% block extra_css %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        font-size: 3.5rem; /* Increase the size of the main heading */
+        color: #333;
+    }
+    h2 {
+        font-size: 2rem; /* Increase the size of subheadings */
+        color: #333;
+    }
+    p, li {
+        font-size: 1.2rem; /* Increase the size of paragraph and list items */
+        line-height: 1.6;
+    }
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    a:hover {
+        background-color: #0056b3;
+    }
+</style>
+<link rel="stylesheet" href="{% static 'css/userapp/UserHomePage.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    <h1>Digital Lending System</h1>
+    <p>Our digital lending system makes borrowing e-books easy and convenient. Enjoy a streamlined process designed to enhance your reading experience. Here’s how it works:</p>
+
+    <h2>1. Easy Borrowing Process</h2>
+    <p>With just a few clicks, you can borrow e-books from our extensive collection:</p>
+    <ul>
+        <li>Browse or search for titles you wish to borrow.</li>
+        <li>Click the "Borrow" button to initiate the borrowing process.</li>
+        <li>Instant access to e-books on your account.</li>
+    </ul>
+
+    <h2>2. Track Due Dates</h2>
+    <p>Stay organized with our built-in tracking system for due dates:</p>
+    <ul>
+        <li>View a list of all borrowed e-books along with their due dates.</li>
+        <li>Receive reminders via email or notifications about upcoming due dates.</li>
+        <li>Easily manage renewals if you wish to extend your borrowing period.</li>
+    </ul>
+
+    <h2>3. Online Returns</h2>
+    <p>Returning e-books is just as simple:</p>
+    <ul>
+        <li>Return e-books directly from your account without visiting the library.</li>
+        <li>Receive confirmation once the return process is complete.</li>
+        <li>Access your reading history to keep track of past borrows.</li>
+    </ul>
+
+    <h2>4. User-Friendly Interface</h2>
+    <p>Our digital lending system is designed with you in mind:</p>
+    <ul>
+        <li>Intuitive navigation allows for quick access to borrowing and returning features.</li>
+        <li>Responsive design ensures a smooth experience on both desktop and mobile devices.</li>
+        <li>Help resources are available for any questions or assistance you may need.</li>
+    </ul>
+
+    <h2>5. Enhanced Reading Experience</h2>
+    <p>Our digital lending system not only simplifies borrowing but also enhances your overall reading experience:</p>
+    <ul>
+        <li>Access to a wide range of e-books tailored to your interests.</li>
+        <li>Personalized recommendations based on your reading habits.</li>
+        <li>Stay updated with new arrivals and popular titles in your preferred genres.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Experience a hassle-free lending experience with our digital lending system. Borrowing, tracking, and returning e-books has never been easier!</p>
+
+</div>
+
+<footer class="text-center">
+    <p>&copy; 2024 E-Library Management System. All rights reserved.</p>
+</footer>
+{% endblock %}

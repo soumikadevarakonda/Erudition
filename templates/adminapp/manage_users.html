@@ -1,0 +1,114 @@
+{% extends 'navbar/AdminNavbar.html' %}
+
+{% block title %}Manage Users{% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - User Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        main {
+            margin: 30px auto;
+            max-width: 1200px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #343a40;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #343a40;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>User Management</h1>
+        <p><em>Welcome to the User Management section. Here, you can view and manage user information, track their reading preferences, and ensure a seamless experience for all library users. You can monitor the books they are reading, update their details, and stay informed about their activity on the platform.</em></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>S. No.</th>
+                    <th>Name</th>
+                    <th>Date Registered</th>
+                    <th>Books Reading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Arjun Patel</td><td>2024-01-15</td><td>The Alchemist, The Great Gatsby, Ramayana</td></tr>
+                <tr><td>2</td><td>Priya Desai</td><td>2023-11-12</td><td>Days at the Morisaki Bookshop</td></tr>
+                <tr><td>3</td><td>Ravi Kumar</td><td>2023-10-05</td><td>The 5 AM Club, Deep Work</td></tr>
+                <tr><td>4</td><td>Anjali Sharma</td><td>2024-03-08</td><td>The Forty Rules of Love</td></tr>
+                <tr><td>5</td><td>Suresh Reddy</td><td>2023-12-01</td><td>It Ends With Us, The Silent Patient</td></tr>
+                <tr><td>6</td><td>Neha Gupta</td><td>2024-02-15</td><td>Eat That Frog!</td></tr>
+                <tr><td>7</td><td>Vikram Singh</td><td>2024-03-01</td><td>Harry Potter and the Sorcerer’s Stone</td></tr>
+                <tr><td>8</td><td>Shalini Mehra</td><td>2023-08-22</td><td>Harry Potter and the Goblet of Fire</td></tr>
+                <tr><td>9</td><td>Amitabh Joshi</td><td>2024-05-10</td><td>Harry Potter and the Order of the Phoenix, The Da Vinci Code</td></tr>
+                <tr><td>10</td><td>Simran Kapoor</td><td>2023-06-12</td><td>Harry Potter and the Deathly Hallows</td></tr>
+                <tr><td>11</td><td>Rahul Bhardwaj</td><td>2024-01-05</td><td>The Immortals of Meluha</td></tr>
+                <tr><td>12</td><td>Shreya Iyer</td><td>2024-04-08</td><td>Not Reading Any Books</td></tr>
+                <tr><td>13</td><td>Ajay Patel</td><td>2023-09-10</td><td>The Wealth Money Can't Buy</td></tr>
+                <tr><td>14</td><td>Isha Agarwal</td><td>2023-12-25</td><td>Ram: Scion of Ikshvaku, Sita: Warrior of Mithila</td></tr>
+                <tr><td>15</td><td>Karan Verma</td><td>2023-07-17</td><td>Sita: Warrior of Mithila</td></tr>
+                <tr><td>16</td><td>Alisha Soni</td><td>2024-02-11</td><td>Raavan: Enemy of Aryavarta</td></tr>
+                <tr><td>17</td><td>Manoj Kumar</td><td>2023-03-21</td><td>War of Lanka</td></tr>
+                <tr><td>18</td><td>Ritika Shah</td><td>2024-04-01</td><td>Cracking the Coding Interview</td></tr>
+                <tr><td>19</td><td>Aakash Gupta</td><td>2023-11-30</td><td>Not Reading Any Books</td></tr>
+                <tr><td>20</td><td>Meera Yadav</td><td>2024-03-20</td><td>Rich Dad Poor Dad</td></tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+{% endblock %}

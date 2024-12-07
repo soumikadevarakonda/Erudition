@@ -1,0 +1,50 @@
+{% extends 'navbar/AdminNavbar.html' %}
+{% load static %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block extra_css %}
+<!-- Add custom CSS file specific to Admin Dashboard -->
+<link rel="stylesheet" href="{% static 'css/adminapp/AdminHomePage.css' %}">
+{% endblock %}
+
+{% block body %}
+<header>
+    <center>
+        <h1>Admin Dashboard</h1>
+        <p class="tagline">
+            <em>Manage your library system efficiently!</em>
+        </p>
+    </center>
+</header>
+
+<!-- Tools Section -->
+<div class="tools-title text-center my-4">
+    <h2>Admin Tools</h2>
+</div>
+
+<!-- Admin Tools Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
+            <img src="{% static 'images/user details.png' %}" class="img-fluid rounded icon" alt="Manage Users">
+            <h3>User Details</h3>
+            <p>View and manage all the users registered in the library system.</p>
+            <a href="{% url 'adminapp:manage_users' %}" class="btn btn-primary">Go to Manage Users</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
+            <img src="{% static 'images/catalog.jpg' %}" class="img-fluid rounded icon" alt="Catalog Management">
+            <h3>Catalog Management</h3>
+            <p>Organize, edit, and add new books and resources to the catalog.</p>
+            <a href="{% url 'adminapp:catalog_management' %}" class="btn btn-primary">Go to Catalog Management</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 d-flex flex-column align-items-center">
+            <img src="{% static 'images/view report.png' %}" class="img-fluid rounded icon" alt="View Reports">
+            <h3>View Reports</h3>
+            <p>Analyze reports on user activities, book borrowing statistics, and overdue items.</p>
+            <a href="{% url 'adminapp:view_reports' %}" class="btn btn-primary">Go to View Reports</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

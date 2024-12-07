@@ -1,0 +1,35 @@
+{% extends 'navbar/AdminNavbar.html' %}
+{% block title %}Catalog Management{% endblock %}
+
+{% block body %}
+<h2>Catalog Management</h2>
+<a href="{% url 'adminapp:add_book' %}" class="btn btn-success mb-3">Add New Book</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Availability</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.is_available|yesno:"Available,Not Available" }}</td>
+                <td>
+                    <!-- Read Button with some margin to the right -->
+                    <a href="{{ book.pdf.url }}" class="btn btn-info mr-3" target="_blank">Read</a>
+                    <!-- Edit Button -->
+                    <a href="{% url 'adminapp:edit_book' book.id %}" class="btn btn-link">
+                        <i class="fas fa-pen"></i> Edit
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

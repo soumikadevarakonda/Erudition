@@ -1,0 +1,21 @@
+.icon {
+    width: 180px;
+    height: 180px;
+}
+
+h3 {
+    font-size: 1.5rem; /* Larger heading font size */
+}
+
+p {
+    font-size: 1.1rem; /* Slightly larger paragraph font */
+}
+
+.btn {
+    font-size: 1.1rem; /* Larger button text */
+}
+
+/* Additional styling to center content vertically in tool items */
+.d-flex {
+    text-align: center;
+}

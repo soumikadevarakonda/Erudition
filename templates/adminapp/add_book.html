@@ -1,0 +1,95 @@
+{% extends 'navbar/AdminNavbar.html' %}
+{% block title %}Add Book{% endblock %}
+
+{% block body %}
+<style>
+    /* Basic container to center the content */
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Title Styling */
+    .page-title {
+        text-align: center;
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Form group styling for better spacing */
+    .book-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Styling the submit button */
+    .submit-btn {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1.2rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Adjust form fields for better spacing */
+    .book-form p {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    /* Additional styling for form fields */
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-top: 5px;
+    }
+
+    /* Styling for file inputs */
+    input[type="file"] {
+        padding: 5px;
+    }
+
+    /* Mobile responsiveness: making sure everything looks good on smaller screens */
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<div class="container">
+    <h2 class="page-title">Add New Book</h2>
+
+    <form method="POST" enctype="multipart/form-data" class="book-form">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+
+        <div class="form-submit">
+            <button type="submit" class="submit-btn">Add Book</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

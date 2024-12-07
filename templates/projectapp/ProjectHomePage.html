@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Library Management System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .carousel-inner img {
+      width: 100%;
+      height: 50vh; /* Half-page carousel */
+      object-fit: cover;
+    }
+
+    /* Style to center the caption over the images */
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      font-weight: bold;
+      width: 100%;
+    }
+
+    /* Increase the size of the content slightly */
+    h2 {
+      font-size: 2rem; /* Increased size for section headings */
+    }
+
+    p {
+      font-size: 1.25rem; /* Medium size for better readability */
+      line-height: 1.6;   /* Adjust line height for better spacing */
+    }
+
+    .btn {
+      font-size: 1.2rem; /* Increase button size slightly */
+    }
+  </style>
+
+  {% extends 'navbar/ProjectNavbar.html' %}
+  {% load static %}
+</head>
+<body>
+  {% block body %}
+
+  <!-- Half-page Carousel with Central Heading -->
+  <div class="container-fluid px-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'images/b1.jpg' %}" alt="First slide">
+          <div class="carousel-caption">
+            Welcome to Library Management
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'images/i2.jpg' %}" alt="Second slide">
+          <div class="carousel-caption">
+            Welcome to Library Management
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'images/i3.jpeg.jpg' %}" alt="Third slide">
+          <div class="carousel-caption">
+            Welcome to Library Management
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Existing content -->
+<div class="container my-5">
+  <!-- E-Book Management -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img src="{% static 'images/i1.jpg' %}" alt="E-Book Management" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h2>E-Book Management</h2>
+      <p>Easily manage your e-book collection. You can browse through a wide range of e-books,keep track of the books you’ve borrowed. Stay updated on your reading history and never lose track of what you love to read.</p>
+      <a href="{% url 'elibrary' %}" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
+
+  <!-- User Authentication and Profiles -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <h2>User Authentication and Profiles</h2>
+      <p>Log in securely and enjoy your reading experience. Keep track of your current reads, explore book recommendations tailored to your interests, and manage your account settings—all in one place.</p>
+      <a href="{% url 'authentication' %}" class="btn btn-primary">Learn More</a>
+    </div>
+    <div class="col-md-6">
+      <img src="{% static 'images/i5.jpg' %}" alt="User Authentication" class="img-fluid rounded">
+    </div>
+  </div>
+
+  <!-- Digital Lending System -->
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="{% static 'images/digital.jpg' %}" alt="Digital Lending" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <h2>Digital Lending System</h2>
+      <p>Our digital lending system makes borrowing e-books easy and convenient. Users can borrow books with a few clicks, track their due dates, and even return e-books online without visiting the library. Stay organized and enjoy a hassle-free lending experience.</p>
+      <a href="{% url 'digital' %}" class="btn btn-primary">Learn More</a>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  {% endblock %}
+</body>
+</html>

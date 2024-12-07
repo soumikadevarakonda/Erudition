@@ -1,0 +1,98 @@
+{% extends 'navbar/ProjectNavbar.html' %}
+{% load static %}
+
+{% block title %}About Us - E-Library Management System{% endblock %}
+
+{% block extra_css %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        font-size: 3.5rem; /* Increase the size of the main heading */
+        color: #333;
+    }
+    h2 {
+        font-size: 2rem; /* Increase the size of subheadings */
+        color: #333;
+    }
+    p, li {
+        font-size: 1.2rem; /* Increase the size of paragraph and list items */
+        line-height: 1.6;
+    }
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    a:hover {
+        background-color: #0056b3;
+    }
+</style>
+<link rel="stylesheet" href="{% static 'css/userapp/UserHomePage.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    <h1>E-Book Management</h1>
+    <p>Easily manage your e-book collection with our intuitive platform. Here’s how you can make the most of our E-Book Management features:</p>
+
+    <h2>1. Browse Through a Wide Range of E-Books</h2>
+    <p>Our library offers an extensive collection of e-books spanning various genres, including fiction, non-fiction, educational, and more. You can:</p>
+    <ul>
+        <li>Search for books by title, author, or genre.</li>
+        <li>Filter results to find specific topics or categories that interest you.</li>
+        <li>Preview book summaries and ratings before borrowing.</li>
+    </ul>
+
+    <h2>2. Track Borrowed Books</h2>
+    <p>Keep track of the books you’ve borrowed easily. Our system provides:</p>
+    <ul>
+        <li>A detailed list of currently borrowed books along with due dates.</li>
+        <li>Notifications for upcoming due dates to avoid late returns.</li>
+        <li>The ability to renew borrowed books if needed.</li>
+    </ul>
+
+    <h2>3. Stay Updated on Your Reading History</h2>
+    <p>Your reading history is automatically logged, helping you keep track of what you’ve read. This feature allows you to:</p>
+    <ul>
+        <li>View a complete list of past reads.</li>
+        <li>Identify favorite genres or authors based on your reading habits.</li>
+        <li>Revisit books you've enjoyed previously.</li>
+    </ul>
+
+    <h2>4. Personalized Recommendations</h2>
+    <p>Based on your reading history and preferences, our platform offers personalized book recommendations. This helps you discover new titles that align with your interests.</p>
+
+    <h2>5. User-Friendly Interface</h2>
+    <p>Our E-Book Management system is designed with the user in mind. You will find:</p>
+    <ul>
+        <li>A clean and intuitive layout that makes navigation easy.</li>
+        <li>Responsive design for seamless access on various devices.</li>
+        <li>Quick access to help and support resources if needed.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>With our E-Book Management features, managing your digital reading experience has never been easier. Dive into our collection, track your reads, and enhance your literary journey today!</p>
+
+</div>
+
+<footer class="text-center">
+    <p>&copy; 2024 E-Library Management System. All rights reserved.</p>
+</footer>
+{% endblock %}

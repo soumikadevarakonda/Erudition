@@ -1,0 +1,67 @@
+{% extends 'navbar/UserNavbar.html' %}
+{% load static %}
+
+{% block title %}User Dashboard{% endblock %}
+
+{% block extra_css %}
+<!-- Add custom CSS file specific to User Dashboard -->
+<link rel="stylesheet" href="{% static 'css/userapp/UserHomePage.css' %}">
+{% endblock %}
+
+{% block body %}
+<header>
+    <center>
+        <h1>Book Vault</h1>
+        <p class="tagline">
+            <em>Your gateway to endless reading!</em>
+        </p>
+    </center>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar text-center my-4">
+    <input type="text" placeholder="Search for books..." class="form-control w-50 d-inline">
+    <button class="btn btn-primary">Search</button>
+</div>
+
+<!-- Suggestions Title -->
+<div class="suggestions-title text-center">
+    <h2>Suggestions</h2>
+</div>
+
+<!-- Book Suggestions Section -->
+<div class="suggestions d-flex justify-content-center flex-wrap">
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/autonomous.jpg' %}" alt="Autonomous" class="img-fluid">
+    </div>
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/iot.jpg' %}" alt="IoT" class="img-fluid">
+    </div>
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/java.jpg' %}" alt="Java" class="img-fluid">
+    </div>
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/maths.jpg' %}" alt="Mathematics" class="img-fluid">
+    </div>
+</div>
+
+<div class="suggestions-title text-center">
+    <h2>More Suggestions</h2>
+</div>
+
+<!-- Additional Book Suggestions Section -->
+<div class="suggestions d-flex justify-content-center flex-wrap">
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/ml.jpg' %}" alt="Machine Learning" class="img-fluid">
+    </div>
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/oxford.jpg' %}" alt="Oxford" class="img-fluid">
+    </div>
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/the four.jpg' %}" alt="The Four" class="img-fluid">
+    </div>
+    <div class="book-item m-2" style="width: 22%;">
+        <img src="{% static 'images/atomic habits.jpg' %}" alt="Atomic Habits" class="img-fluid">
+    </div>
+</div>
+{% endblock %}

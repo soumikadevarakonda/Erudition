@@ -1,0 +1,71 @@
+{% extends 'navbar/AdminNavbar.html' %}
+
+{% block title %}View Report{% endblock %}
+
+{% block body %}
+<h2 class="text-center">Library Engagement Report</h2>
+
+<!-- Book Frequency Graph -->
+<div class="container text-center" style="max-width: 900px; margin: 20px auto;">
+    <h3>Book Frequency</h3>
+    <canvas id="bookFrequencyChart" width="800" height="500"></canvas>
+</div>
+
+<!-- User Classification Pie Chart -->
+<div class="container text-center" style="max-width: 500px; margin: 20px auto;">
+    <h3>User Classification</h3>
+    <canvas id="userClassificationChart" width="450" height="300"></canvas>
+</div>
+
+<!-- Script for rendering charts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Book frequency data (Updated with user-specific books)
+    const bookFrequencyData = {
+        labels: [
+            'The Alchemist', 'The Great Gatsby', 'Days at the Morisaki Bookshop', 'The 5 AM Club',
+            'I Hear You', 'Rich Dad Poor Dad', 'The Forty Rules of Love', 'The 48 Laws of Power',
+            'It Ends With Us', 'Eat That Frog!', 'Harry Potter and the Sorcerer’s Stone',
+            'Harry Potter and the Chamber of Secrets', 'Harry Potter and the Prisoner of Azkaban',
+            'Harry Potter and the Goblet of Fire', 'Harry Potter and the Order of the Phoenix',
+            'Harry Potter and the Half-Blood Prince', 'Harry Potter and the Deathly Hallows',
+            'I Came Upon a Lighthouse', 'The Immortals of Meluha', 'The Secret of the Nagas',
+            'The Oath of the Vayuputras'
+        ],
+        datasets: [{
+            data: [3, 2, 1, 2, 1, 3, 2, 1, 2, 2, 4, 3, 3, 3, 2, 2, 2, 1, 1, 2, 1],
+            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+        }]
+    };
+
+    // User classification data (Updated with realistic user ratios)
+    const userClassificationData = {
+        labels: ['Frequent Readers', 'Active Readers', 'Single-Time Readers', 'Inactive Users'],
+        datasets: [{
+            data: [7, 5, 3, 3], // Updated with real user ratios (example)
+            backgroundColor: ['#36A2EB', '#FF6384', '#FFCE56', '#4CAF50'],
+        }]
+    };
+
+    // Book Frequency Bar Chart
+    new Chart(document.getElementById('bookFrequencyChart'), {
+        type: 'bar',
+        data: bookFrequencyData,
+        options: {
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: { beginAtZero: true }
+            },
+        },
+    });
+
+    // User Classification Pie Chart
+    new Chart(document.getElementById('userClassificationChart'), {
+        type: 'pie',
+        data: userClassificationData,
+    });
+</script>
+{% endblock %}

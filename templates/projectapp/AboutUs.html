@@ -1,0 +1,66 @@
+{% extends 'navbar/ProjectNavbar.html' %}
+{% load static %}
+
+{% block title %}About Us - E-Library Management System{% endblock %}
+
+{% block extra_css %}
+<style>
+    h1 {
+        font-size: 3.5rem; /* Increase the size of the main heading */
+    }
+    h2 {
+        font-size: 2rem; /* Increase the size of subheadings */
+    }
+    p, li {
+        font-size: 1.2rem; /* Increase the size of paragraph and list items */
+    }
+</style>
+<link rel="stylesheet" href="{% static 'css/userapp/UserHomePage.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container my-5">
+    <h1>About Us</h1>
+    <p class="text-center">Welcome to the E-Library Management System, your go-to platform for managing your e-book collection efficiently.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide a user-friendly and efficient library management system that facilitates seamless access to digital resources. We aim to empower users with tools to manage their reading and borrowing activities effectively.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>Features</h2>
+    <ul>
+        <li><strong>E-Book Management:</strong> Easily add, remove, and update e-books in your collection.</li>
+        <li><strong>User Authentication:</strong> Secure login for users to maintain personalized profiles.</li>
+        <li><strong>Digital Lending:</strong> Users can borrow and return e-books effortlessly, with tracking for librarians.</li>
+        <li><strong>Reading History:</strong> Track your reading progress and history.</li>
+        <li><strong>Recommendations:</strong> Get personalized book recommendations based on your reading habits.</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>Why Choose Us?</h2>
+    <p>With a focus on user experience and efficiency, the E-Library Management System simplifies the process of managing e-books for both users and librarians. Our platform is designed with the latest technology to ensure a smooth experience.</p>
+
+    <div class="section-divider"></div>
+
+    <h2>Contact Details</h2>
+    <p>If you have any questions or feedback, feel free to reach out to us through the following contact details:</p>
+    <ul>
+        <li><strong>Email:</strong> support@elibrarysystem.com</li>
+        <li><strong>Phone:</strong> +91 9999999999</li>
+        <li><strong>Address:</strong> 123 E-Library Lane, Knowledge City, Bookland, Global</li>
+    </ul>
+
+    <div class="section-divider"></div>
+
+    <h2>Get In Touch</h2>
+    <p>If you have any questions or feedback, feel free to reach out to us through our contact form on the homepage.</p>
+</div>
+
+<footer class="text-center">
+    <p>&copy; 2024 E-Library Management System. All rights reserved.</p>
+</footer>
+{% endblock %}
