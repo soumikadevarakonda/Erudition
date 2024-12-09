@@ -1,4 +1,4 @@
-#Erudition
+# Erudition
 E-Library Management System Using Django
 
 Tech Stack
