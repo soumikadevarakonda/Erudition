@@ -20,4 +20,8 @@ Username: python
 Password: python
 
 In this Library, you can read some cool books (my personal favorites). In the User App, navigate to "View all Books" to find the library catalog.
+
 Happy Reading! 📖🌱❤
+
+P.S.
+For those wondering what Erudition means, the name is derived from the Latin word for "learning" or "knowledge." It perfectly represents the essence of our library app, designed to promote continuous learning and provide easy access to a wealth of educational resources.
