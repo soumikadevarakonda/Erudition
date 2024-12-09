@@ -15,6 +15,7 @@ Username: admin
 Password: 12345
 
 Admin Login (Django Default Admin Panel)
+
 For accessing the default Django admin panel (for managing the Django backend), use these credentials:
 
 Navigate to the Django admin panel: your-domain.com/admin/
