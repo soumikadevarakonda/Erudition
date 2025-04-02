@@ -38,5 +38,27 @@ In this library, you can explore and read some of my personal favorite books! To
 
 ### Happy Reading! 📖🌱❤ ###
 
-*P.S.
-For those wondering what Erudition means, the name is derived from the Latin word for "learning" or "knowledge." It perfectly represents the essence of our library app, designed to promote continuous learning and provide easy access to a wealth of educational resources.*
+---
+
+## **Acknowledgments**  
+
+Special thanks to:  
+
+- **Dr. Deepak V** for his invaluable mentorship and guidance throughout the project. 🙏  
+- **Ocean PDFs** for providing access to book PDFs that enrich the library collection.  
+- The **Django Community** for its extensive documentation and support.  
+- Everyone who contributed to testing and refining the app.  
+
+---
+
+**P.S.**  
+For those wondering what "Erudition" means, the name is derived from the Latin word for **"learning" or "knowledge."** It perfectly represents the essence of our library app, designed to promote continuous learning and provide easy access to a wealth of educational resources.  
+
+---
+
+### **License**  
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
+
+---
+
+Let me know if you need any tweaks! 🚀🔥
