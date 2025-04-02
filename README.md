@@ -44,7 +44,7 @@ In this library, you can explore and read some of my personal favorite books! To
 
 Special thanks to:  
 
-- **Dr. Deepak V** for his invaluable mentorship and guidance throughout the project. 🙏  
+- **Dr. Deepak V** for his invaluable mentorship and guidance throughout the project. 
 - **Ocean PDFs** for providing access to book PDFs that enrich the library collection.  
 - The **Django Community** for its extensive documentation and support.  
 - Everyone who contributed to testing and refining the app.  
